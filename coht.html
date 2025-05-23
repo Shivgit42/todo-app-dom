@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="heading">
+        <h1>Todo List</h1>
+      </div>
+
+      <div class="input-container">
+        <div>
+          <input
+            id="todo-input"
+            class="inp"
+            type="text"
+            placeholder="Enter your todo here"
+          />
+          <p
+            class="error-message"
+            style="color: red; display: none; margin-top: 5px"
+          >
+            This field is required.
+          </p>
+        </div>
+        <div class="add-button">
+          <button onclick="addTodo()" class="addButton">Add todo</button>
+        </div>
+      </div>
+
+      <div class="todos-list-container"></div>
+    </div>
+  </body>
+  <script src="todo.js"></script>
+</html>
